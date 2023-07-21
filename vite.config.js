@@ -4,7 +4,7 @@ import * as path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: 'https://brian-aguilar.github.io/eminari_tours/',
   css: {
     preprocessorOptions: {
       scss: {
