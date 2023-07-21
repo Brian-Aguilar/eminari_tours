@@ -3,3 +3,138 @@
 //   // margin: 0 auto;
 //   // text-align: center;
 // }
+
+.app_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 15dvh;
+    width: 100dvw;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+
+    .contenido {
+        align-items: center;
+        justify-content: space-between;
+        // img#logo {
+        //     max-width: 150px;
+        // }
+
+        #logo {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            color: $white;
+        }
+
+        ul.nav {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+
+            li {
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+}
+
+.app_contenido {
+    // padding: 15dvh 0;
+    width: 100%;
+}
+
+.app_bodyheader {
+    width: 100%;
+    min-height: 100dvh;
+    background-color: $primary-color;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    h2 {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+        max-width: 750px;
+    }
+
+    h3 {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        max-width: 1000px;
+        width: 80%;
+        margin-top: 2rem;
+        font-weight: 400;
+    }
+}
+
+.app_home {
+    .home:nth-child(odd) {
+        background-color: $primary-s-color;
+    }
+
+    .home {
+        display: flex;
+
+        p {
+            max-width: 800px;
+        }
+
+        .contenido {
+            gap: 1.25em;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 5em 2em;
+
+            div {
+                flex: 3;
+            }
+
+            picture img {
+                flex: 2;
+                border-radius: 1rem;
+                max-width: 350px;
+                overflow: hidden;
+                display: block;
+            }
+        }
+    }
+
+    .calidad {
+        .contenido {
+            h2 {
+                display: block;
+                margin: 0 auto;
+                font-size: 2rem;
+                text-transform: uppercase;
+                line-height: 2;
+                position: relative;
+                margin-bottom: 1em;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left: 50%;
+                    width: 120%;
+                    height: 3px;
+                    background-color: $primary-color;
+                    transform: translate(-50%, 0);
+                }
+            }
+        }
+    }
+}
