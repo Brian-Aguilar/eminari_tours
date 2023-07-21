@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { LuAlignRight, LuX } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 export default function AppHeader() {
     const [openMenu, setOpenMenu] = useState(false);
@@ -17,20 +18,20 @@ export default function AppHeader() {
 
                     <LuAlignRight size="2em" className="app_icon_menu_open" onClick={onChangeStatusMenu} />
                     <ul className="nav">
-                        <li>Inicio</li>
-                        <li>Destinos</li>
-                        <li>Nosotros</li>
-                        <li>Contactanos</li>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/destinos">Destinos</Link></li>
+                        <li><Link to="/nosotros">Nosotros</Link></li>
+                        <li><Link to="/contactanos">Contactanos</Link></li>
                     </ul>
                 </div>
             </div>
             <nav>
                 <ul className={`nav-mobile ${openMenu ? "active" : ""}`}>
                     <LuX size="2em" className="app_icon_menu_close" onClick={onChangeStatusMenu} />
-                    <li>Inicio</li>
-                    <li>Destinos</li>
-                    <li>Nosotros</li>
-                    <li>Contactanos</li>
+                    <li><Link to="/">Inicio</Link></li>
+                    <li><Link to="/destinos">Destinos</Link></li>
+                    <li><Link to="/nosotros">Nosotros</Link></li>
+                    <li><Link to="/contactanos">Contactanos</Link></li>
                 </ul>
             </nav>
         </>

@@ -3,7 +3,8 @@ import lima from "@/assets/lima_total.jpg"
 import couster from "@/assets/couster.jpg"
 import couster2 from "@/assets/couster2.jpg"
 import couster3 from "@/assets/couster3.jpg"
-import { FcApproval } from "react-icons/fc"
+import lima_mar from "@/assets/lima_mar.jpg"
+import { FcApproval, FcCellPhone } from "react-icons/fc"
 import { LuCar } from "react-icons/lu";
 
 
@@ -103,6 +104,15 @@ export default function AppHome() {
                             </span>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="contactanos" style={{backgroundImage: `url(${lima_mar})`}} id="contactanos">
+                <div className="contenido">
+                    <h2 className="titulo">¡Elige nuestro servicio de Transporte Turístico en Lima Perú!</h2>
+                    <p>Solicite nuestro servicio de transporte para eventos llamando al:</p>
+
+                    <span><FcCellPhone size="3em" /><p>+51 999-999-999</p></span>
                 </div>
             </div>
 
