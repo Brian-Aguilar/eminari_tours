@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppHome from "../pages";
 import AppHeader from "../components/Header";
+import AppFooter from "../components/Footer";
 
 export default function AppRoutes() {
     return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
                     </Route>
                 </Routes>
             </div>
+            <AppFooter />
         </BrowserRouter>
     )
 }

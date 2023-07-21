@@ -1,6 +1,10 @@
 import AppBodyHeader from "../components/BodyHeader";
 import lima from "@/assets/lima_total.jpg"
 import couster from "@/assets/couster.jpg"
+import couster2 from "@/assets/couster2.jpg"
+import couster3 from "@/assets/couster3.jpg"
+import { FcApproval } from "react-icons/fc"
+import { LuCar } from "react-icons/lu";
 
 
 export default function AppHome() {
@@ -30,21 +34,75 @@ export default function AppHome() {
             </div>
             <div className="calidad">
                 <div className="contenido">
-                    <h2>Nuestra movilidad</h2>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi repellat numquam earum at nam! Explicabo nam expedita voluptatibus, repellat exercitationem sapiente corrupti odit, inventore temporibus consectetur obcaecati beatae? Labore!</p>
+                    <h2 className="titulo">Calidad y seguridad</h2>
+                    <div className="app_cards">
+                        <div className="app_card">
+                            <span>
+                                <FcApproval size="1.7em" />
+                                <h3>ERSONAL ALTAMENTE CALIFICADO</h3>
+                            </span>
+                            <p>Contamos con personal calificado para cumplir las exigencias de nuestros clientes. Conductores debidamente uniformados con todos los documentos en regla.</p>
+                        </div>
+                        <div className="app_card">
+                            <span>
+                                <FcApproval size="1.7rem" />
+                                <h3>AMPLIA Y MODERNA FLOTA VEHÍCULAR</h3>
+                            </span>
+                            <p>Todos los vehículos de nuestra flota poseen las condiciones adecuadas para el transporte de personal hacia cualquier destino.</p>
+                        </div>
+                        <div className="app_card">
+                            <span>
+                                <FcApproval size="1.2em" />
+                                <h3>SERVICIO VIP</h3>
+                            </span>
+                            <p>Ante todo nuestra responsabilidad es con los usuarios de nuestros vehículos, por lo que su confort es nuestra prioridad.</p>
+                        </div>
+                        <div className="app_card">
+                            <span>
+                                <FcApproval size="1.2em" />
+                                <h3>SEGURIDAD</h3>
+                            </span>
+                            <p>Cada vehículo en circulación cuenta con sus respectivos documentos en regla y, sobre todo, mantenimiento preventivo, el vehículo es revisado en cada servicio antes de ser utilizado.</p>
+                        </div>
+                        <div className="app_card">
+                            <span>
+                                <FcApproval size="1.2em" />
+                                <h3>COMODIDAD</h3>
+                            </span>
+                            <p>Nuestra flota cuenta con asientos reclinables, cinturón de seguridad y se mantienen en perfectas condiciones para ser utilizados.</p>
+                        </div>
+                        <div className="app_card">
+                            <span>
+                                <FcApproval size="1.2em" />
+                                <h3>FLEXIBILIDAD</h3>
+                            </span>
+                            <p>Nos acoplamos al horario y en la mayoría de rutas de cada cliente necesite para el traslado ocasional o permanente de personas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="home">
+            <div className="movilidad">
                 <div className="contenido">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sapiente eveniet veniam blanditiis dignissimos repudiandae, beatae nulla, optio ducimus molestiae pariatur. Recusandae, aut. Quibusdam modi a, illo quam doloribus quos.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellendus ratione ab reiciendis velit esse accusantium numquam praesentium deserunt. Tenetur repellat ea in eius alias dolorum asperiores beatae nostrum vel.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam vero quas itaque animi minima laborum eligendi, nobis et praesentium perspiciatis iure voluptas repellendus delectus facere aperiam. Odio vero magni quos?
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex libero qui corporis iure dolorum consequuntur, eveniet quis eum possimus repudiandae eius omnis voluptas aliquid numquam totam sunt distinctio mollitia! Facere.
-                    </p>
+                    <h2 className="titulo">Nuestra movilidad</h2>
+                    <div className="app_cards">
+                        <div className="app_card">
+                            <picture><img src={couster2} alt="Imagen de couster 2" /></picture>
+                            <h4>Mini van</h4>
+                            <span>
+                                <LuCar />
+                                <p>Capacidad: 5 pasajeros</p>
+                            </span>
+                        </div>
+                        <div className="app_card">
+                            <picture><img src={couster3} alt="Imagen de couster 3" /></picture>
+                            <h4>Van Lujo</h4>
+                            <span>
+                                <LuCar />
+                                <p>Capacidad: 16 pasajeros</p>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
