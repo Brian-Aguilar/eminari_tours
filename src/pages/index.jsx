@@ -40,7 +40,7 @@ export default function AppHome() {
                         <div className="app_card">
                             <span>
                                 <FcApproval size="1.7em" />
-                                <h3>ERSONAL ALTAMENTE CALIFICADO</h3>
+                                <h3>PERSONAL ALTAMENTE CALIFICADO</h3>
                             </span>
                             <p>Contamos con personal calificado para cumplir las exigencias de nuestros clientes. Conductores debidamente uniformados con todos los documentos en regla.</p>
                         </div>
